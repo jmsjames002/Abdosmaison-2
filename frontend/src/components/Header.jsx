@@ -15,35 +15,35 @@ const Header = () => {
       <div className="nav-wrapper">
         <a href="/" className="network-logo">
           <Dumbbell size={24} style={{ marginRight: '8px' }} />
-          Fitness Maison
+          AbdosMaison
         </a>
         
         <nav className="network-nav">
-          <a 
-            href="#systeme-d" 
+          <a
+            href="#systeme-d"
             className="network-nav-link"
-            onClick={(e) => scrollToSection(e, 'systeme-d')}
-          >
+            onClick={(e) => scrollToSection(e, 'systeme-d')}>
+
             Système D
           </a>
-          <a 
-            href="#workout" 
+          <a
+            href="#workout"
             className="network-nav-link"
-            onClick={(e) => scrollToSection(e, 'workout')}
-          >
+            onClick={(e) => scrollToSection(e, 'workout')}>
+
             Programme
           </a>
-          <a 
-            href="#faq" 
+          <a
+            href="#faq"
             className="network-nav-link"
-            onClick={(e) => scrollToSection(e, 'faq')}
-          >
+            onClick={(e) => scrollToSection(e, 'faq')}>
+
             FAQ
           </a>
         </nav>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Header;
