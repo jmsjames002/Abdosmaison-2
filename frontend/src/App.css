@@ -1,0 +1,874 @@
+/* ================================
+   FITNESS MAISON - STYLES PROFESSIONNELS
+   Basé sur les guidelines Network Design System
+   ================================ */
+
+/* ================================
+   VARIABLES CSS - EXACT NETWORK COLORS
+   ================================ */
+:root {
+  /* Backgrounds - Exact Network Colors */
+  --bg-page: #FAFFEE;
+  --bg-card: #FAFAFF;
+  --bg-subtle: #EDEDFE;
+  --bg-section: #CACAFC;
+  
+  /* Text - Exact Network Colors */
+  --text-primary: #004534;
+  --text-secondary: #0C6951;
+  --text-light: #807979;
+  
+  /* Borders - Exact Network Colors */
+  --border-light: #CACAFC;
+  --border-medium: #DDDDDD;
+  --border-strong: #B0B0B0;
+  
+  /* MAIN ACCENT COLORS - Network Brand Colors Only */
+  --brand-primary: #D3FF62;
+  --brand-dark: #004534;
+  --brand-hover: #0C6951;
+  
+  /* Spacing System - Exact Network Values */
+  --spacing-xs: 8px;
+  --spacing-small: 16px;
+  --spacing-medium: 24px;
+  --spacing-large: 32px;
+  --spacing-xl: 48px;
+  --spacing-giant: 64px;
+}
+
+/* ================================
+   GLOBAL STYLES & RESET
+   ================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  background-color: var(--bg-page);
+}
+
+.App {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+/* ================================
+   CONTAINER & LAYOUT SYSTEM
+   ================================ */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-medium);
+}
+
+.main-content {
+  width: 100%;
+}
+
+.section {
+  padding: var(--spacing-giant) 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-medium);
+}
+
+.section-description {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* ================================
+   HEADER / NAVIGATION - EXACT NETWORK STYLE
+   ================================ */
+.network-header {
+  background: var(--bg-page);
+  position: fixed;
+  top: 32px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99999;
+  padding: 0 12px;
+}
+
+.nav-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: var(--brand-dark);
+  border-radius: 25px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 69, 52, 0.25);
+}
+
+.network-logo {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+}
+
+.network-logo:hover {
+  opacity: 0.9;
+}
+
+.network-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.network-nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.network-nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ================================
+   BUTTONS - EXACT NETWORK STYLE (PILL SHAPE)
+   ================================ */
+.btn-primary {
+  background: var(--brand-primary);
+  color: var(--brand-dark);
+  border: none;
+  border-radius: 25px;
+  padding: 14px 32px;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  min-height: 48px;
+  line-height: 1.2;
+}
+
+.btn-primary:hover {
+  background: var(--brand-hover);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 69, 52, 0.25);
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* ================================
+   HERO SECTION
+   ================================ */
+.hero-section {
+  padding: var(--spacing-xl) 0;
+  background: var(--bg-page);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.hero-text {
+  padding-right: var(--spacing-large);
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small);
+  margin-bottom: var(--spacing-medium);
+  font-size: 14px;
+  color: var(--text-light);
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meta-separator {
+  color: var(--border-strong);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-medium);
+}
+
+.hero-problem {
+  background: var(--bg-subtle);
+  padding: var(--spacing-medium);
+  border-radius: 16px;
+  margin-bottom: var(--spacing-medium);
+  border-left: 4px solid var(--brand-primary);
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.hero-description {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-large);
+}
+
+.hero-cta {
+  margin-top: var(--spacing-large);
+}
+
+.hero-image-wrapper {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 69, 52, 0.25);
+  height: 500px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hero-image-wrapper:hover .hero-image {
+  transform: scale(1.05);
+}
+
+/* ================================
+   SYSTEME D SECTION
+   ================================ */
+.systemed-section {
+  background: white;
+}
+
+.systemed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+
+.systemed-card {
+  background: var(--bg-card);
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 69, 52, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.systemed-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 69, 52, 0.25);
+}
+
+.systemed-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.systemed-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.systemed-card:hover .systemed-card-image img {
+  transform: scale(1.1);
+}
+
+.systemed-card-content {
+  padding: var(--spacing-large);
+}
+
+.systemed-replacement {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small);
+  margin-bottom: var(--spacing-medium);
+  flex-wrap: wrap;
+}
+
+.replacement-item {
+  flex: 1;
+  min-width: 120px;
+}
+
+.household-item {
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.replacement-arrow {
+  font-size: 24px;
+  color: var(--brand-primary);
+  font-weight: 700;
+}
+
+.gym-equipment {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: 600;
+  color: var(--brand-hover);
+}
+
+.systemed-tips {
+  display: flex;
+  gap: var(--spacing-small);
+  background: var(--bg-subtle);
+  padding: var(--spacing-medium);
+  border-radius: 16px;
+  margin-top: var(--spacing-medium);
+}
+
+.tip-icon {
+  color: var(--brand-hover);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.systemed-tips p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.safety-notice {
+  background: var(--bg-subtle);
+  border-radius: 24px;
+  padding: var(--spacing-large);
+  border-left: 4px solid var(--brand-primary);
+}
+
+.notice-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-small);
+}
+
+.notice-content p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+/* ================================
+   WORKOUT ROUTINE SECTION
+   ================================ */
+.workout-section {
+  background: var(--bg-page);
+}
+
+.workout-meta {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-large);
+  margin-top: var(--spacing-medium);
+  flex-wrap: wrap;
+}
+
+.workout-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: 25px;
+}
+
+.workout-tip-card {
+  background: var(--brand-primary);
+  padding: var(--spacing-large);
+  border-radius: 24px;
+  display: flex;
+  gap: var(--spacing-medium);
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+  box-shadow: 0 4px 12px rgba(211, 255, 98, 0.3);
+}
+
+.workout-tip-card .tip-icon {
+  color: var(--brand-dark);
+  flex-shrink: 0;
+}
+
+.tip-text {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: var(--brand-dark);
+  line-height: 1.6;
+}
+
+.exercises-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+
+.exercise-card {
+  background: var(--bg-card);
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 69, 52, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.exercise-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 69, 52, 0.25);
+}
+
+.exercise-number {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--brand-primary);
+  color: var(--brand-dark);
+  font-size: 24px;
+  font-weight: 700;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.exercise-image-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.exercise-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.exercise-card:hover .exercise-image {
+  transform: scale(1.1);
+}
+
+.exercise-content {
+  padding: var(--spacing-large);
+}
+
+.exercise-name {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-small);
+}
+
+.exercise-specs {
+  display: flex;
+  gap: var(--spacing-small);
+  margin-bottom: var(--spacing-medium);
+  flex-wrap: wrap;
+}
+
+.spec-badge {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+}
+
+.spec-badge.duration {
+  background: var(--brand-primary);
+  color: var(--brand-dark);
+}
+
+.exercise-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-medium);
+}
+
+.exercise-tips {
+  background: var(--bg-subtle);
+  padding: var(--spacing-medium);
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.exercise-tips strong {
+  color: var(--text-primary);
+}
+
+.workout-footer {
+  background: var(--bg-subtle);
+  padding: var(--spacing-large);
+  border-radius: 24px;
+  border-left: 4px solid var(--brand-primary);
+}
+
+.workout-note {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.workout-note strong {
+  color: var(--text-primary);
+}
+
+/* ================================
+   FAQ SECTION - ACCORDION DESIGN
+   ================================ */
+.faq-section {
+  background: white;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background: var(--bg-card);
+  border-radius: 24px;
+  margin-bottom: var(--spacing-medium);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 69, 52, 0.15);
+  transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 69, 52, 0.25);
+}
+
+.accordion-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: var(--spacing-large);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.accordion-header:hover {
+  background: var(--bg-subtle);
+}
+
+.accordion-question {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: left;
+  line-height: 1.4;
+  padding-right: var(--spacing-medium);
+}
+
+.accordion-icon {
+  color: var(--brand-hover);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-content.open {
+  max-height: 500px;
+  padding: 0 var(--spacing-large) var(--spacing-large);
+}
+
+.accordion-content p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ================================
+   DISCLAIMER SECTION
+   ================================ */
+.disclaimer-section {
+  background: var(--bg-page);
+}
+
+.disclaimer-container {
+  background: #FFF9E6;
+  border: 2px solid #FFD700;
+  border-radius: 24px;
+  padding: var(--spacing-large);
+  display: flex;
+  gap: var(--spacing-medium);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.disclaimer-icon {
+  color: #D97706;
+  flex-shrink: 0;
+}
+
+.disclaimer-content {
+  flex: 1;
+}
+
+.disclaimer-title {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  color: #D97706;
+  margin-bottom: var(--spacing-medium);
+}
+
+.disclaimer-text {
+  margin: 0;
+  color: #78350F;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+.footer {
+  background: var(--brand-dark);
+  color: white;
+  padding: var(--spacing-xl) 0 var(--spacing-medium);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+
+.footer-section {
+  padding: 0;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--brand-primary);
+  margin-bottom: var(--spacing-medium);
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: var(--spacing-small);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--brand-primary);
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  transition: color 0.2s ease;
+}
+
+.footer-contact:hover {
+  color: var(--brand-primary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-large);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* ================================
+   RESPONSIVE DESIGN - EXACT NETWORK BREAKPOINTS
+   ================================ */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 var(--spacing-medium);
+  }
+  
+  .hero-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-large);
+  }
+  
+  .hero-text {
+    padding-right: 0;
+  }
+  
+  .systemed-grid,
+  .exercises-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 781px) {
+  .App {
+    padding-top: 80px;
+  }
+  
+  .network-header {
+    top: 0;
+    position: fixed;
+    padding: 0;
+  }
+  
+  .nav-wrapper {
+    border-radius: 0;
+    padding: 16px;
+  }
+  
+  .network-nav {
+    gap: 12px;
+  }
+  
+  .network-nav-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  .hero-image-wrapper {
+    height: 300px;
+  }
+  
+  .systemed-grid,
+  .exercises-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .systemed-card,
+  .exercise-card {
+    border-radius: 24px;
+  }
+  
+  .workout-meta {
+    flex-direction: column;
+    gap: var(--spacing-small);
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .network-logo {
+    font-size: 16px;
+  }
+  
+  .network-nav {
+    display: none;
+  }
+  
+  .systemed-replacement {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .replacement-arrow {
+    transform: rotate(90deg);
+  }
+}
