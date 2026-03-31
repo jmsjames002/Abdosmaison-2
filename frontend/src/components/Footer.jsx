@@ -33,10 +33,10 @@ const Footer = () => {
           </div>
           
           <div className="footer-section">
-            <h4 className="footer-title">Contact</h4>
-            <a href="mailto:contact@fitnessmaison.fr" className="footer-contact">
+            <h4 className=""></h4>
+            <a href="mailto:contact@fitnessmaison.fr" className="">
               <Mail size={16} />
-              contact@fitnessmaison.fr
+              c
             </a>
           </div>
         </div>
@@ -47,8 +47,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
