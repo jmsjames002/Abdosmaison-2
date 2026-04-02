@@ -11,7 +11,7 @@ const AccordionItem = ({ id, question, answer, isOpen, onToggle }) => {
         onClick={onToggle}
         aria-expanded={isOpen}
       >
-        <span className="accordion-question">{question}</span>
+        <span className="accordion-question" id={id}>{question}</span>
         {isOpen ? (
           <ChevronUp className="accordion-icon" />
         ) : (
