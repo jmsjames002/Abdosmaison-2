@@ -13,28 +13,32 @@ export const systemeDItems = [
   household: "Sac à dos lesté de livres",
   replacement: "Gilet lesté / Kettlebell",
   tips: "Remplissez votre sac à dos de livres ou de bouteilles d'eau pour créer une résistance ajustable. Assurez-vous que le poids est bien réparti.",
-  image: "https://img.freepik.com/photos-gratuite/pile-livres-chaise_23-2148213835.jpg"
+  image: "https://img.freepik.com/photos-gratuite/pile-livres-chaise_23-2148213835.jpg",
+  alt: "sac à dos lesté par des gros livres",
 },
 {
   id: 2,
   household: "Packs d'eau (6 bouteilles)",
   replacement: "Haltères",
   tips: "Un pack de 6 bouteilles de 1,5L = environ 9kg. Parfait pour les curls, les élévations latérales et les exercices de core.",
-  image: "https://images.pexels.com/photos/13055851/pexels-photo-13055851.jpeg"
+  image: "https://images.pexels.com/photos/13055851/pexels-photo-13055851.jpeg",
+  alt: "remplacer des halters par des bouteilles d'eau",
 },
 {
   id: 3,
   household: "Chaise ou bord de canapé",
   replacement: "Banc de musculation",
   tips: "Utilisez une chaise stable pour les dips, les relevés de jambes et les Bulgarian split squats. Vérifiez la stabilité avant chaque utilisation.",
-  image: "https://images.unsplash.com/photo-1773910109561-1ebe8d3cc0d2"
+  image: "https://images.unsplash.com/photo-1773910109561-1ebe8d3cc0d2",
+  alt: "une chaise pour faire des dips",
 },
 {
   id: 4,
   household: "Torchons sur carrelage",
   replacement: "Roue à abdos (Sliding discs)",
   tips: "Placez vos mains ou pieds sur des torchons et glissez sur le carrelage pour un travail intense des abdominaux et du core.",
-  image: "https://png.pngtree.com/thumb_back/fh260/background/20240417/pngtree-pile-of-colorful-warm-clothes-on-wooden-background-image_15660740.jpg"
+  image: "https://png.pngtree.com/thumb_back/fh260/background/20240417/pngtree-pile-of-colorful-warm-clothes-on-wooden-background-image_15660740.jpg",
+  alt : "utilisez un torchon pour remplacer la roue à abdos",
 }];
 
 
@@ -51,6 +55,7 @@ export const workoutRoutine = {
     rest: "15 secondes entre les séries",
     description: "Position de pompe sur les avant-bras. Gardez le corps aligné, contractez les abdos et les fessiers.",
     image: "https://images.unsplash.com/photo-1717821681365-36b0da044a75",
+    alt: " position pour faire du gainage",
     tips: "Ne laissez pas vos hanches s'affaisser. Regardez le sol pour maintenir un alignement neutre de la colonne."
   },
   {
@@ -60,6 +65,7 @@ export const workoutRoutine = {
     rest: "15 secondes entre les séries",
     description: "En position de pompe, ramenez alternativement les genoux vers la poitrine à un rythme soutenu.",
     image: "https://i0.wp.com/wbk.gna.mybluehost.me/newstartforme/wp-content/uploads/2022/03/Upper-Body-Bodyweight-Exercises-for-Weight-Loss.jpg?resize=800%2C533",
+    alt: "Position pour faire des mountains climbers",
     tips: "Gardez le core engagé et les hanches basses. L'exercice doit être dynamique mais contrôlé."
   },
   {
@@ -69,6 +75,7 @@ export const workoutRoutine = {
     rest: "15 secondes entre les séries",
     description: "Allongé sur le dos, levez les épaules et les jambes à quelques centimètres du sol. Bras tendus au-dessus de la tête.",
     image: "https://swolverine.com/cdn/shop/articles/Hollow_body_holds_-_swolverine.jpg?v=1661132670&width=1024",
+    alt: "position pour faire du hollow body hold",
     tips: "Pressez le bas du dos contre le sol. Si c'est trop difficile, pliez légèrement les genoux."
   },
   {
@@ -78,6 +85,7 @@ export const workoutRoutine = {
     rest: "15 secondes entre les séries",
     description: "Allongé sur le dos, amenez le coude vers le genou opposé en alternance, comme si vous pédaliez.",
     image: "https://images.pexels.com/photos/8038625/pexels-photo-8038625.jpeg",
+    alt: "position pour faire des bycle crunches", 
     tips: "Concentrez-vous sur la rotation du torse plutôt que de tirer sur votre nuque. Mouvement lent et contrôlé."
   }]
 
