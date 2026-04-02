@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
+const AccordionItem = ({ id, question, answer, isOpen, onToggle }) => {
   return (
     <div className="accordion-item">
       <button
@@ -35,6 +35,7 @@ const FAQ = ({ items }) => {
       {items.map((item, index) => (
         <AccordionItem
           key={item.id}
+          id={item.id} // Transmission de l'ID (ex: "privacy") au composant enfant
           question={item.question}
           answer={item.answer}
           isOpen={openIndex === index}
