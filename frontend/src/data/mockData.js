@@ -120,7 +120,7 @@ export const faqItems = [
 {
   id: "legal",
   question: "Mentions Légales",
-  answer: "Ce site est édité à titre personnel par jmsjames. Hébergement : Vercel Inc. (650 California St, San Francisco, CA 94108). Contact : contact@abdosmaison.fit. Le contenu est fourni à titre informatif sur le fitness à domicile."
+  answer: "Ce site est édité à titre personnel. Hébergement : Vercel Inc. (650 California St, San Francisco, CA 94108). Le contenu est fourni à titre informatif sur le fitness à domicile."
 }];
 
 
