@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-title">À propos</h4>
             <p className="footer-text">
-              Fitness Maison vous aide à transformer votre domicile en salle de sport personnelle. 
+              L'équipe fit, au travers de son programme abdosmaison, vous aide à transformer votre domicile en salle de sport personnelle. 
               Des conseils pratiques pour rester en forme sans abonnement coûteux.
             </p>
           </div>
@@ -24,21 +24,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/mentions-legales" className="footer-link">
+                <a href="#mentions-legales" className="footer-link">
                   <FileText size={16} />
                   Mentions Légales
                 </a>
               </li>
             </ul>
           </div>
-          
-          <div className="footer-section">
-            <h4 className=""></h4>
-            <a href="mailto:contact@fitnessmaison.fr" className="">
-              <Mail size={16} />
-            </a>
-          </div>
-        </div>
         
         <div className="footer-bottom">
           <p className="footer-copyright">
