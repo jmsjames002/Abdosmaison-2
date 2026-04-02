@@ -18,7 +18,7 @@ const Footer = () => {
             <h4 className="footer-title">Liens légaux</h4>
             <ul className="footer-links">
               <li>
-                <a href="/politique-confidentialite" className="footer-link">
+                <a href="#faq" className="footer-link">
                   <Shield size={16} />
                   Politique de Confidentialité
                 </a>
