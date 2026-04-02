@@ -113,10 +113,15 @@ export const faqItems = [
   answer: "La visibilité des abdominaux dépend principalement de votre taux de masse grasse. Avec un entraînement régulier et une nutrition adaptée, vous devriez sentir vos abdos se renforcer en 2-3 semaines. Pour une visibilité esthétique, comptez 8-12 semaines selon votre point de départ. La patience et la constance sont essentielles."
 },
 {
-  id: 5,
+  id: "privacy",
   question: "Quelle est votre politique de confidentialité ?",
   answer: "Nous respectons votre vie privée. Ce site utilise des cookies via Google AdSense pour proposer des publicités adaptées à vos centres d'intérêt. Aucune donnée personnelle n'est collectée à votre insu sur ce site."
-  }];
+  },
+{
+  id: "legal",
+  question: "Mentions Légales",
+  answer: "Ce site est édité à titre personnel par jmsjames. Hébergement : Vercel Inc. (650 California St, San Francisco, CA 94108). Contact : contact@abdosmaison.fit. Le contenu est fourni à titre informatif sur le fitness à domicile."
+}];
 
 
 export const disclaimer = {
