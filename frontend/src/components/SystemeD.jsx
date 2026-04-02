@@ -16,8 +16,12 @@ const SystemeD = ({ items }) => {
           {items.map((item) => (
             <div key={item.id} className="systemed-card">
               <div className="systemed-card-image">
-                <img src={item.image} alt={item.household} />
-              </div>
+                <img 
+                  src={item.image}
+                  alt={item.household}
+                  className="w-full h-64 object-cover rounded-t-xl"
+                />
+                </div>
               
               <div className="systemed-card-content">
                 <div className="systemed-replacement">
