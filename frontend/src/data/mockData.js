@@ -111,7 +111,7 @@ export const faqItems = [
   id: 4,
   question: "Combien de temps avant de voir des résultats visibles ?",
   answer: "La visibilité des abdominaux dépend principalement de votre taux de masse grasse. Avec un entraînement régulier et une nutrition adaptée, vous devriez sentir vos abdos se renforcer en 2-3 semaines. Pour une visibilité esthétique, comptez 8-12 semaines selon votre point de départ. La patience et la constance sont essentielles."
-}
+},
 {
   id: 5,
   question: "Quelle est votre politique de confidentialité ?",
