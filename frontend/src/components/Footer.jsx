@@ -18,23 +18,24 @@ const Footer = () => {
             <h4 className="footer-title">Liens légaux</h4>
             <ul className="footer-links">
               <li>
-                <a href="#faq" className="footer-link">
+                <a href="#privacy" className="footer-link">
                   <Shield size={16} />
                   Politique de Confidentialité
                 </a>
               </li>
               <li>
-                <a href="#mentions-legales" className="footer-link">
+                <a href="#legal" className="footer-link">
                   <FileText size={16} />
                   Mentions Légales
                 </a>
               </li>
             </ul>
           </div>
+        </div>
         
-        <div className="footer-bottom">
-          <p className="footer-copyright">
-            © {new Date().getFullYear()} Fitness Maison. Tous droits réservés.
+        <div className="footer-bottom mt-8 pt-8 border-t border-slate-800 text-center">
+          <p className="footer-copyright text-xs text-slate-500">
+            © {new Date().getFullYear()} AbdosMaison. Tous droits réservés.
           </p>
         </div>
       </div>
