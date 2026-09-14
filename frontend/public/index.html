@@ -20,5 +20,30 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
+
+            <script>
+  function detectAdBlock() {
+    const testAd = document.createElement('div');
+    testAd.innerHTML = '&nbsp;';
+    testAd.className = 'adsbox';
+    testAd.style.position = 'absolute';
+    testAd.style.left = '-9999px';
+    document.body.appendChild(testAd);
+
+    window.setTimeout(function () {
+      if (testAd.offsetHeight === 0) {
+        document.getElementById('adblock-overlay').style.display = 'flex';
+      }
+      testAd.remove();
+    }, 100);
+  }
+  window.addEventListener('load', detectAdBlock);
+</script>
+
+<div id="adblock-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:99999; color:white; justify-content:center; align-items:center; text-align:center; flex-direction:column; padding:20px;">
+  <h2>Bloqueur de publicité détecté</h2>
+  <p>Merci de désactiver votre bloqueur de publicité pour accéder au contenu de ce site.</p>
+</div>
+        
     </body>
 </html>
